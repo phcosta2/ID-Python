@@ -15,12 +15,12 @@ Capacitar alunos e entusiastas em programação Python a partir de uma abordagem
 
 O conteúdo está organizado nos seguintes diretórios:
 
-📁 pandas/
-📁 matplotlib_seaborn/
-📁 selenium/
-📁 flask/
-📁 django/
-📁 exemplos/
+📁 pandas/ <br>
+📁 matplotlib_seaborn/ <br>
+📁 selenium/ <br>
+📁 flask/ <br>
+📁 django/ <br>
+📁 exemplos/ <br>
 
 
 Cada pasta contém:
