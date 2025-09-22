@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Login · FlaskApp{% endblock %}
+{% block content %}
+<h1>Entrar</h1>
+<form method="post" class="card">
+  <label>Email</label>
+  <input type="email" name="email" value="{{ email|default('') }}" required />
+  <label>Senha</label>
+  <input type="password" name="password" required />
+  <button type="submit">Entrar</button>
+  <p class="hint">Teste: admin@example.com / 123456</p>
+</form>
+<p>Não tem conta? <a href="{{ url_for('register') }}">Cadastre-se</a></p>
+{% endblock %}

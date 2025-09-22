@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}App{% endblock %}</title>
+  <style>
+    nav { display:flex; gap:8px; padding:10px; background:#111; }
+    button { color:#fff; background:#333; border:1px solid #555; padding:6px 10px; border-radius:8px; cursor:pointer; }
+    .spacer { flex:1 }
+  </style>
+</head>
+<body>
+  <nav>
+    <!-- Navegação como BOTÕES (sem <a>) -->
+    <button type="button" onclick="window.location.href='{% url 'home' %}'">Home</button>
+    <div class="spacer"></div>
+
+    {% if request.user.is_authenticated %}
+      <!-- Logout via POST para o LogoutView do Django 5+ -->
+      <form action="{% url 'logout' %}" method="post" style="display:inline;">
+        {% csrf_token %}
+        <button type="submit">Sair</button>
+      </form>
+    {% else %}
+      <button type="button" onclick="window.location.href='{% url 'login' %}'">Entrar</button>
+      <button type="button" onclick="window.location.href='{% url 'signup' %}'">Cadastrar</button>
+    {% endif %}
+  </nav>
+
+  {% for m in messages %}<p>{{ m }}</p>{% endfor %}
+  {% block content %}{% endblock %}
+</body>
+</html>

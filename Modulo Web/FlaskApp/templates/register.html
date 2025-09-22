@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Cadastro · FlaskApp{% endblock %}
+{% block content %}
+<h1>Cadastrar</h1>
+<form method="post" class="card">
+  <label>Nome</label>
+  <input name="name" value="{{ name|default('') }}" required />
+  <label>Email</label>
+  <input type="email" name="email" value="{{ email|default('') }}" required />
+  <label>Senha</label>
+  <input type="password" name="password" required />
+  <button type="submit">Cadastrar</button>
+</form>
+{% endblock %}

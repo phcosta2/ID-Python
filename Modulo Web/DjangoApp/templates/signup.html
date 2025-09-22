@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Cadastrar{% endblock %}
+{% block content %}
+  <h1>Cadastrar</h1>
+  <form method="post">{% csrf_token %}
+    <p><label>Usuário<br><input name="username" required></label></p>
+    <p><label>Senha<br><input name="password" type="password" required></label></p>
+    <button type="submit">Criar conta</button>
+  </form>
+{% endblock %}

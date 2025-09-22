@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Entrar{% endblock %}
+{% block content %}
+  <h1>Entrar</h1>
+  <form method="post">{% csrf_token %}
+    <p><label>Usuário<br>{{ form.username }}</label></p>
+    <p><label>Senha<br>{{ form.password }}</label></p>
+    <button type="submit">Entrar</button>
+  </form>
+{% endblock %}

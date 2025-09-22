@@ -1,0 +1,13 @@
+body { font-family: system-ui, Arial, sans-serif; margin: 0; background:#f6f7f9; }
+.nav { display:flex; gap:12px; padding:12px 16px; background:#111827; }
+.nav a { color:#fff; text-decoration:none; font-weight:600; }
+.container { max-width:720px; margin:24px auto; background:#fff; padding:24px; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,.06); }
+.card { display:grid; gap:10px; }
+input, button { padding:10px 12px; border-radius:8px; border:1px solid #d1d5db; }
+button { cursor:pointer; border:0; background:#111827; color:#fff; font-weight:700; }
+.flash { list-style:none; padding:0; margin:12px 0; }
+.flash li { padding:10px 12px; border-radius:8px; margin-bottom:8px; }
+.flash-success { background:#ecfdf5; color:#065f46; }
+.flash-error   { background:#fef2f2; color:#991b1b; }
+.flash-info    { background:#eff6ff; color:#1e40af; }
+.hint { color:#6b7280; font-size:.9rem; }

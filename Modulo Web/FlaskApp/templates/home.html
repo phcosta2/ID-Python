@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Home · FlaskApp{% endblock %}
+{% block content %}
+<h1>Olá, {{ name }} 👋</h1>
+<hr>
+<h2>Clima agora — {{ city_resolved or city_query }}</h2>
+{% if weather %}
+  <div class="card" style="margin-top:12px">
+    <p><strong>Condição:</strong> {{ weather.description }} (código {{ weather.weathercode }})</p>
+    <p><strong>Temperatura:</strong> {{ weather.temperature }} °C</p>
+    <p><strong>Vento:</strong> {{ weather.windspeed }} km/h (dir {{ weather.winddirection }}°)</p>
+    <p><small>Atualizado em: {{ weather.time }}</small></p>
+  </div>
+{% else %}
+  <p class="hint">Sem dados de clima no momento.</p>
+{% endif %}
+{% endblock %}
