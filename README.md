@@ -15,12 +15,11 @@ Capacitar alunos e entusiastas em programação Python a partir de uma abordagem
 
 O conteúdo está organizado nos seguintes diretórios:
 
-📁 pandas/ <br>
-📁 matplotlib_seaborn/ <br>
-📁 selenium/ <br>
-📁 flask/ <br>
-📁 django/ <br>
-📁 exemplos/ <br>
+📁 Modulo Pandas/ <br>
+📁 Modulo Selenium/ <br>
+📁 Modulo Web <br>
+📁 Videos/ <br>
+> Os vídeos se encontram no Google Drive: https://drive.google.com/drive/folders/148fprIz7DRUsFZAuW-m5FNEBuqerHT1V?usp=sharing
 
 
 Cada pasta contém:
@@ -36,24 +35,14 @@ Cada pasta contém:
 | Módulo                  | Status           |
 |------------------------|------------------|
 | Pandas                 | ✅ Publicado      |
-| Matplotlib e Seaborn   | 🔧 Em revisão     |
-| Selenium               | 🔧 Em desenvolvimento |
-| Flask e Django         | ⏳ Em finalização |
+| Matplotlib e Seaborn   | ✅ Publicado    |
+| Flask e Django         | ✅ Publicado |
 
-📌 **Previsão de publicação total:** até 30 de junho de 2025
 
 ## 📚 Requisitos
 
 - Python 3.10+
 - Jupyter Notebook ou Google Colab
 - Bibliotecas: `pandas`, `matplotlib`, `seaborn`, `selenium`, `flask`, `django`
-
-Para instalar rapidamente:
-
-```bash
-pip install -r requirements.txt
-
-
-
 
 Este material foi desenvolvido como parte de um projeto de Iniciação Didática orientado pelo Prof. Leonardo Anjoletto Ferreira na FEI. O conteúdo é livre para uso acadêmico, com incentivo à colaboração e sugestões de melhoria.
